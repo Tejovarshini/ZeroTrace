@@ -1,0 +1,29 @@
+<section>
+  <h2>Energy Dashboard</h2>
+  <canvas id="energyChart"></canvas>
+  <div class="metric-box">Installing 100 solar panels saves ₹20 lakhs/year</div>
+</section>
+
+<script>
+  const ctx = document.getElementById('energyChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+      datasets: [
+        {
+          label: 'Energy Produced (kWh)',
+          data: [120, 150, 180, 200, 170],
+          borderColor: 'green',
+          fill: false
+        },
+        {
+          label: 'Energy Consumed (kWh)',
+          data: [100, 130, 160, 180, 150],
+          borderColor: 'red',
+          fill: false
+        }
+      ]
+    }
+  });
+</script>
