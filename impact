@@ -1,0 +1,20 @@
+<section>
+  <h2>Impact Tracker</h2>
+  <div class="gauge">Progress: 65% towards Net Zero</div>
+  <canvas id="impactChart"></canvas>
+</section>
+
+<script>
+  const ctx = document.getElementById('impactChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['CO₂ Saved', 'Water Conserved', 'Waste Reduced', 'Energy Generated'],
+      datasets: [{
+        label: 'Annual Impact',
+        data: [1200, 800, 500, 1500],
+        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#9C27B0']
+      }]
+    }
+  });
+</script>
