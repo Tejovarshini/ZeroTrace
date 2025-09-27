@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Net Zero Campus Guide</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="energy.html">Energy</a></li>
+      <li><a href="water.html">Water</a></li>
+      <li><a href="waste.html">Waste</a></li>
+      <li><a href="transport.html">Transport</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="toolkit.html">Toolkit</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Towards a Carbon-Free Campus</h1>
+    <div id="earth-animation"></div>
+    <p>Helping campuses achieve sustainability through energy, water, waste, and mobility solutions.</p>
+  </header>
+
+  <section class="stats">
+    <div class="card">Avg. campus emits <strong>5,000 tons CO₂/year</strong></div>
+    <div class="card">Our model reduces <strong>60%</strong></div>
+  </section>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    document.getElementById('earth-animation').innerHTML = `
+      <lottie-player src="assets/animations/earth.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    `;
+  </script>
+</body>
+</html>
