@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZeroTrace | Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Our Projects</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Solar Panel Installation</h2>
+      <p>We’ve installed solar panels across campus rooftops to reduce dependency on fossil fuels.</p>
+    </section>
+    <section>
+      <h2>Green Transportation</h2>
+      <p>Electric shuttles and bike-sharing programs are helping cut down emissions.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ZeroTrace Initiative</p>
+  </footer>
+</body>
+</html>
