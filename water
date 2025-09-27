@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Water | Net Zero Campus</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>Water Dashboard</h2>
+  <canvas id="waterChart" width="400" height="200"></canvas>
+  <div class="card">Impact: 40% reduction in external water dependency</div>
+
+  <script>
+    const ctx = document.getElementById('waterChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Harvested', 'Used', 'Recycled'],
+        datasets: [{
+          label: 'Water (liters)',
+          data: [5000, 4000, 1500],
+          backgroundColor: ['#2196F3', '#4CAF50', '#FFC107']
+        }]
+      }
+    });
+  </script>
+</body>
+</html>
